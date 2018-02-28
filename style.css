@@ -11,6 +11,7 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
 /* Link Styles */
 
 a {
@@ -224,3 +225,9 @@ a.social:hover {
   border-radius: 25%;
   padding:5px;
 }
+
+.email{float: right;
+padding: 10px;}
+
+.number{float:  left;
+padding: 10px;}
