@@ -1,3 +1,5 @@
+
+/*    */
 body {
 	font-family: Helvetica, sans-serif;
 	line-height: 1.5;
@@ -6,14 +8,14 @@ body {
 	text-align: center;
 }
 
-header {
+.main-header {
 	padding-top: 120px;
   padding-bottom: 90px;
   margin-bottom: 50px;
 
 }
 
-header span {
+.title {
 	color: black;
   border-bottom: 2px solid;
 	font-size: 26px;
@@ -23,18 +25,50 @@ header span {
   font-weight: lighter;
 }
 
+ul li {
+
+color: white;
+margin-right: 45px;
+
+
+}
+
 h1 {
 	font-size:72px;
 	font-weight: normal;
 	margin-top: 24px;
   line-height: 1;
   text-shadow: 0 1px 0 rgba(0,0,0,.3);
+  color: grey;
+}
+h2{
+	font-size: 53px;
+}
+h3{
+	font-size: 20px;
+	color: #48525c;
 }
 
 p {
   color: initial;
   line-height: 1.6;
   padding: 0 24%;
+}
+
+
+.primary-content{
+	text-align: center;
+}
+
+#main-footer{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom:solid 10px orange;
+}
+
+ .t-border{
+ 	border-top: 2px solid lightgrey;
+
 }
 
 a:link {
@@ -45,3 +79,20 @@ a:link {
 	padding: 0 9px 3px 9px;
 	display: inline-block;
 }
+
+a:hover{
+	color: forestgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
