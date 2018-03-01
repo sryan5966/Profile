@@ -1,5 +1,8 @@
 /* Base Styles -------------------- */
 
+* {
+    box-sizing: border-box;
+}
 body {
   color: #878787;
   margin: 0;
@@ -28,6 +31,23 @@ h3 {
   margin-bottom: 1.7em; /* 34px */
 }
 
+img{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+ul, ol{
+
+  margin:30px 0;
+}
+ul{
+  margin-bottom: 10px;
+
+list-style-type: none;
+}
+ol{  margin-bottom: 10px;
+  }
+
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -51,9 +71,15 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
+
   background-color: #ffa949;
   height:850px;
   padding-top:170px;
+  background-image: url("images/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .title {
@@ -81,6 +107,7 @@ a:active {
 	padding-top: 80px;
 	padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
+ 
 }
 
 .main-footer {
@@ -97,10 +124,11 @@ a:active {
 
 .primary-content, 
 .secondary-content {
-  width: 860px;
+  width: 75%;
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
+  max-width: 900px;
 }
 
 .wildlife {
@@ -121,6 +149,26 @@ display:inline-block;
 }
 
 .arrow{width:50px;}
+
+/* floated columns ------------------ */
+
+.resorts, .tips{
+  width: 46.5%;
+}
+
+.tips{float: right;
+
+}
+.resorts{float: left;
+}
+
+/*  float clearfix */
+
+.group:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
