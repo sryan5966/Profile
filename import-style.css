@@ -1,3 +1,5 @@
+/* web fonts -------------------- */
+
 /* Base Styles -------------------- */
 
 * {
@@ -27,6 +29,7 @@ h1 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+margin:12px 0 0 ;
 }
 
 h2 {
@@ -86,13 +89,21 @@ a:active {
 .main-header {
   padding-top: 170px;
   height: 850px;
-  background: #ffa949 url('images/mountains.jpg') no-repeat center;
+
+  background:
+   linear-gradient(#51BF7D, transparent 90%),  
+   linear-gradient(0deg, #fff, transparent ),
+   #ffa949 url('images/mountains.jpg') no-repeat center;
   background-size: cover;
 
 }
 .title {
   color: white;
   font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom:2px solid;
+  padding-bottom: 10px;
 }
 
 .intro {
@@ -161,7 +172,11 @@ margin-top:20px;
 display:inline-block;
 }
 
-.arrow{width:50px;}
+.arrow{
+  width:50px;
+  margin-top: 150px;
+
+}
 
 /* floated columns ------------------ */
 
