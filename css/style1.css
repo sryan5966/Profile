@@ -50,21 +50,22 @@ a {
 	margin-bottom: 6px;
 }
 
-.main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	color: #093a58;
-}
-
 .name a,
 .main-nav a {
 	padding: 10px 15px;
+	text-align: center;
 	display: block;
 }
+
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: #093a58;
+	}
 
 /* ---- Layout Containers ---- */
 
@@ -78,6 +79,7 @@ a {
 	padding-bottom: 1.5em;
 	background: #3acec2;
 	margin-bottom: 30px;
+
 }
 
 .main-footer {
@@ -86,22 +88,38 @@ a {
 	background: #d9e4ea;
 }
 
-
-
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
 
 	.col{
-		display: inline-block;
-		width: 50%;
-		margin-right: -4px;
-		vertical-align: top;
-
+		float: right;
 		padding-left: 1em;
 		padding-right: 1em;
+	}
+
+	.primary{
+		width: 40%;
+	}
+	.secondary{
+		width: 60%;
+	}
+
+	.main-nav li {
+		float: left;
+		margin-left: 12px;
+	}
+
+	.main-nav{
+
+		float: right;
+	}
+
+	.name{
+
+		float: left;
 	}
 
 	.wrap {
@@ -109,24 +127,29 @@ a {
 	}
 
 	.container {
-		width: 80%;
+		width: 85%;
 		max-width: 1150px;
 		margin: 0 auto;
+		border:1px solid red;
 	}
 
-	.name,
-	.main-nav,
-	.main-nav li {
-		display: inline-block;
+	.feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding:10px;
+		border:solid 1px #d9e4ea;
+
 	}
 
-	.name {
-		width: 240px;
-		margin-right: 50px;
-	}
+	.clearfix::after {
+		content: "";
+		display:table;
+		clear: both;
 
-	.main-nav li {
-		margin-right: 12px;
+
 	}
 
 }
