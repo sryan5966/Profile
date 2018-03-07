@@ -1,5 +1,5 @@
 /* ================================= 
-  Base Styles
+  Base Element Styles
 ==================================== */
 
 * {
@@ -14,7 +14,7 @@ body {
 
 p {
 	font-size: .95em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.8em;
 }
 
 h2,
@@ -32,6 +32,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -40,118 +44,141 @@ a {
 
 .name {
 	font-size: 1.25em;
-}
-
-.name,
-.main-nav li {
-	text-align: center;
-	background: #fff;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin: 0;
 }
 
 .name a,
 .main-nav a {
-	padding: 10px 15px;
 	text-align: center;
 	display: block;
+	padding: 10px 15px;
 }
 
-	.main-nav a {
-		font-size: .95em;
-		color: #3acec2;
-		text-transform: uppercase;
-	}
-	
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.main0nav {
+	margin-top: 5px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
+.main-header{
+	padding-top:.5em;
+	padding-bottom:.5em;
 }
 
-.main-header {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+.banner, 
+.main-footer{
+text-align: center;
+
+}
+
+.banner {
+	color: #fff;
 	background: #3acec2;
-	margin-bottom: 30px;
-
+	padding:3.2em 0;
+	margin-bottom:60px;
 }
 
+.col{
+
+	padding-right: 1em;
+	padding-left: 1em;
+}
 .main-footer {
-	text-align: center;
-	padding: 2em 0;
 	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline{
+	margin-bottom:0;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 789px) {
+@media (min-width: 769px) {
 
-	.col{
-		float: right;
-		padding-left: 1em;
-		padding-right: 1em;
-	}
 
-	.primary{
-		width: 40%;
-	}
-	.secondary{
-		width: 60%;
-	}
 
-	.main-nav li {
-		float: left;
-		margin-left: 12px;
-	}
+.container{
+	width: 90%;
+	margin:0 auto;
+}
 
-	.main-nav{
+.primary, .secondary {
+	width: 50%;
+}
 
-		float: right;
-	}
+.name, .col{
+	float: left;
+}
 
-	.name{
+.main-nav{
+	float: right;
+}
 
-		float: left;
-	}
+.main-nav li {
+	display: inline-block;
+	margin-left: 15px;
+}
 
-	.wrap {
-		min-height: calc(100vh - 89px);
-	}
+.tagline{
+	font-size: 1.4em;
+}
 
-	.container {
-		width: 85%;
-		max-width: 1150px;
-		margin: 0 auto;
-		border:1px solid red;
-	}
-
-	.feat-img {
-		width: 300px;
-		float: left;
-		margin-top: 5px;
-		margin-right: 25px;
-		margin-bottom: 25px;
-		padding:10px;
-		border:solid 1px #d9e4ea;
-
-	}
+	/* ---- Float clearfix ---- */
 
 	.clearfix::after {
-		content: "";
-		display:table;
+		content: " ";
+		display: table;
 		clear: both;
-
-
 	}
 
 }
+
+
+@media(min-width: 1025px){
+.container{
+	width: 80%;
+	max-width: 1150px;
+}
+
+.primary{
+	width: 40%
+}
+
+.secondary, .tertiary{
+	width: 30%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
