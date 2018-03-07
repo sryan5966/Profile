@@ -60,6 +60,12 @@ a {
 	color: #093a58;
 }
 
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	display: block;
+}
+
 /* ---- Layout Containers ---- */
 
 .container {
@@ -80,14 +86,22 @@ a {
 	background: #d9e4ea;
 }
 
+
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
 
-	.name, .main-nav, .main-nav li {
-		display:inline;
+	.col{
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		vertical-align: top;
+
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 
 	.wrap {
@@ -100,5 +114,21 @@ a {
 		margin: 0 auto;
 	}
 
+	.name,
+	.main-nav,
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.name {
+		width: 240px;
+		margin-right: 50px;
+	}
+
+	.main-nav li {
+		margin-right: 12px;
+	}
+
 }
+
 
