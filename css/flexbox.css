@@ -1,4 +1,5 @@
 .container{
 	display: flex;
-	height: 300px;
+	flex-wrap: wrap;
+	justify-content: space-between; 
 }
